@@ -6,7 +6,7 @@ They need to be replaced to make your configuration work
 Some files also contain paths to the files that are being modified by the scripts.
 They need to be replaced with the actual location of your configuration files
 
-The script /home/pi/.sh compiles unbound from source. This only works if unbount isn’t already on your system!
+The script /home/pi/bypassFTL.sh compiles unbound from source. This only works if unbount isn’t already on your system!
 The script /home/pi/.sh makes the modifications to allow unbound to be used as unfiltered DNS resolver.
 
 More info on pihole + unbound here:
