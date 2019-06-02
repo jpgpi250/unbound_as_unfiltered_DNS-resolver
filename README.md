@@ -15,6 +15,10 @@ The script /home/pi/bypassFTL.sh compiles unbound from source. This only works i
 
 The script /home/pi/compile_unbound.sh makes the modifications,required to allow unbound to be used as unfiltered DNS resolver.
 
+The script /home/pi/nmapweb is only a partial script, it doesn't download the zipfile. You need to be registered to download this file!
+The instructions to install nmapweb can be found here:https://discourse.pi-hole.net/t/run-nmap-security-audit-tool-from-a-web-interface/20351
+Read the instructions, and perform the necessary steps, before executing the script!
+
 If you decide to run the scripts, despite the WARNING, you must exexute the with sudo, eg. sudo ./bypassFTL.sh
 
 so (example IP's):
