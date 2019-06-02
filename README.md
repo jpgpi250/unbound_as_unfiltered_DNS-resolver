@@ -5,18 +5,22 @@ Everything is tested on a raspberry pi model 3B, running the raspbian stretch li
 
 Most files contain specific IPv4, IPv6 and subnet examples.
 They need to be replaced to make your configuration work!
-Some scripts also contain paths to the files that are being modified by the scripts.
+
+The scripts also contain paths to the files that are being modified by the scripts.
 They need to be replaced with the actual location of your configuration files!
 
 WARNING: it may be wise, even for advanced users, to execute the scripts line by line (copy/paste) this to allow you to keep track of what is actually been changed!
 
 The script /home/pi/bypassFTL.sh compiles unbound from source. This only works if unbount isn’t already installed on your system!
+
 The script /home/pi/compile_unbound.sh makes the modifications,required to allow unbound to be used as unfiltered DNS resolver.
 
 If you decide to run the scripts, despite the WARNING, you must exexute the with sudo, eg. sudo ./bypassFTL.sh
 
-so (example IP's)
+so (example IP's):
+
 setting the DNS server to 192.168.2.57 would give the client ad blocking (using pihole)
+
 setting the DNS server to 192.168.2.47 would give the client unfiltered DNS
 
 If you are using pihole DHCP, an example to configure alternative DNS server can be found here:
