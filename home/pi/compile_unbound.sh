@@ -28,7 +28,7 @@ wget https://nlnetlabs.nl/downloads/unbound/$file.tar.gz
 tar xzf $file.tar.gz 
 cd $file
 
-sudo ./configure --prefix=/usr --sysconfdir=/etc --disable-static --with-libhiredis --with-pidfile=/run/unbound.pid
+sudo ./configure --prefix=/usr --sysconfdir=/etc --disable-static --with-libhiredis --enable-cachedb --with-pidfile=/run/unbound.pid
 sudo make
 sudo make install
 cd ..
