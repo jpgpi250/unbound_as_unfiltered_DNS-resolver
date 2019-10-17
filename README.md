@@ -1,7 +1,7 @@
 The files in this repository are for use with the configuration, explained here:
 https://discourse.pi-hole.net/t/unbound-as-unfiltered-dns-resolver-alternative-for-pihole-disable/20246 (unfiltered DNS)
 and here:
- (unbound + Redis - Cache DB Module Options).
+https://discourse.pi-hole.net/t/pihole-ftl-unbound-with-cache-db-module-options-redis/24676 (unbound + Redis - Cache DB Module Options).
 
 Everything is tested on a raspberry pi model 3B, running the raspbian buster lite version september 2019
 
