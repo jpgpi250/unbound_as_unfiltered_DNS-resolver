@@ -1,7 +1,7 @@
 The files in this repository are for use with the configuration, explained here:
 https://discourse.pi-hole.net/t/unbound-as-unfiltered-dns-resolver-alternative-for-pihole-disable/20246
 
-Everything is tested on a raspberry pi model 3B, running the raspbian stretch lite version april 2019
+Everything is tested on a raspberry pi model 3B, running the raspbian stretch lite version september 2019
 
 Most files contain specific IPv4, IPv6 and subnet examples.
 They need to be replaced to make your configuration work!
