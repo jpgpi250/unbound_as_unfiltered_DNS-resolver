@@ -1,7 +1,7 @@
 The files in this repository are for use with the configuration, explained here:
 https://discourse.pi-hole.net/t/unbound-as-unfiltered-dns-resolver-alternative-for-pihole-disable/20246
 
-Everything is tested on a raspberry pi model 3B, running the raspbian stretch lite version september 2019
+Everything is tested on a raspberry pi model 3B, running the raspbian buster lite version september 2019
 
 Most files contain specific IPv4, IPv6 and subnet examples.
 They need to be replaced to make your configuration work!
@@ -11,9 +11,11 @@ They need to be replaced with the actual location of your configuration files!
 
 WARNING: it may be wise, even for advanced users, to execute the scripts line by line (copy/paste) this to allow you to keep track of what is actually been changed!
 
-The script /home/pi/bypassFTL.sh compiles unbound from source. This only works if unbount isn’t already installed on your system!
+The script /home/pi/compile_unbound.sh compiles unbound from source, using the "Cache DB Module Options" (Redis). This only works if unbount isn’t already installed on your system!
 
-The script /home/pi/compile_unbound.sh makes the modifications,required to allow unbound to be used as unfiltered DNS resolver.
+The script /home/pi/bypassFTL.sh makes the modifications,required to allow unbound to be used as unfiltered DNS resolver.
+
+The script /home/pi/install_phpRedisAdmin.sh installs the files, required to look at the Redis data, in the lighttpd folder. Checkup on Redis, using a browser (http://<IP-ADDRESS of pihole>/phpRedisAdmin/).
 
 The script /home/pi/nmapweb is only a partial script, it doesn't download the zipfile. You need to be registered to download this file!
 The instructions to install nmapweb can be found here:https://discourse.pi-hole.net/t/run-nmap-security-audit-tool-from-a-web-interface/20351
