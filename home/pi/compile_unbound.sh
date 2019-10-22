@@ -2,6 +2,7 @@
 
 sudo apt-get -y install libssl-dev
 sudo apt-get -y install libexpat1-dev
+sudo apt-get -y install libevent-dev
 
 # redis
 sudo apt-get -y install redis-server
@@ -28,7 +29,7 @@ wget https://nlnetlabs.nl/downloads/unbound/$file.tar.gz
 tar xzf $file.tar.gz 
 cd $file
 
-sudo ./configure --prefix=/usr --sysconfdir=/etc --disable-static --with-libhiredis --enable-cachedb --with-pidfile=/run/unbound.pid
+sudo ./configure --prefix=/usr --sysconfdir=/etc --disable-static --with-libevent --with-libhiredis --enable-cachedb --with-pidfile=/run/unbound.pid
 sudo make
 sudo make install
 cd ..
