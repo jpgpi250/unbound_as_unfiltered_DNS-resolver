@@ -31,9 +31,9 @@ sudo apt-get install libhiredis-dev
 
 # user
 sudo groupadd -g 991 unbound
-sudo useradd -c "unbound-1.10.0" -d /var/lib/unbound -u 991 -g unbound -s /bin/false unbound
+sudo useradd -c "unbound-1.10.1" -d /var/lib/unbound -u 991 -g unbound -s /bin/false unbound
 
-file=unbound-1.10.0
+file=unbound-1.10.1
 mkdir -p unbound
 cd unbound
 wget https://nlnetlabs.nl/downloads/unbound/$file.tar.gz
